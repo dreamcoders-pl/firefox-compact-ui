@@ -667,3 +667,6 @@ menupopup > menuitem, menupopup > menu {
 		animation-duration: 1s !important;
 	}
 }
+
+/* Disables the left spacing before tabs when FF isn't maximized */
+.titlebar-spacer[type="pre-tabs"] { width: 1px !important; }
