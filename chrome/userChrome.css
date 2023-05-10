@@ -670,3 +670,4 @@ menupopup > menuitem, menupopup > menu {
 
 /* Disables the left spacing before tabs when FF isn't maximized */
 .titlebar-spacer[type="pre-tabs"] { width: 1px !important; }
+.titlebar-spacer[type="post-tabs"] { width: 24px !important; }

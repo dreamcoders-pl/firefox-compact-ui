@@ -13,7 +13,6 @@
     --in-content-button-horizontal-padding: 8px !important;
     --in-content-primary-button-text-color: rgb(255, 255, 255) !important;
     --in-content-primary-button-background: var(--blue-60) !important;
-    --in-content-primary-button-background-hover: var(--blue-70) !important;
     --in-content-primary-button-background-active: var(--blue-80) !important;
     --in-content-link-color: var(--blue-40) !important;
     --in-content-link-color-hover: var(--blue-50) !important;
@@ -21,13 +20,11 @@
     --in-content-link-color-visited: var(--blue-40) !important;
     --checkbox-checked-color: rgb(255, 255, 255) !important;
     --checkbox-checked-bgcolor: var(--blue-60) !important;
-    --checkbox-checked-hover-bgcolor: var(--blue-70) !important;
     --checkbox-checked-active-bgcolor: var(--blue-80) !important;
   }
   
   button {
     font-weight: normal !important;
-    min-width: 6.3em !important;
   }
   .close-icon, .back-button, .button-add, .button-save, .button-edit, .button-toggle, .button-delete, .button-reset {
     min-width: unset !important;
