@@ -59,23 +59,9 @@
   line-height: 1.7em;
 }
 
-
-
 .tabbrowser-tab:hover:not([selected]) .tab-background {
   border-block-start-color: color-mix(in srgb, currentColor 33%, transparent) !important;
 }
-
-/* mf: active tab border color fix for FF v96+ */
-/* .tabbrowser-tab:is([selected], [multiselected]) { */
-	/* color: rgb(249, 249, 251) !important; */
-/* } */
-/* .tabbrowser-tab:is([selected], [multiselected]) .tab-content > .tab-label-container > .tab-text { */
-	/* color: rgb(0, 0, 0) !important; */
-/* } */
-/* .tabbrowser-tab:is([selected], [multiselected]) .tab-content > .tab-label-container > .tab-label { */
-	/* color: rgb(0, 0, 0) !important; */
-/* } */
-
 
 .tab-background[selected="true"] {
   border-block-start-color: var(--tab-line-color) !important;
@@ -88,24 +74,26 @@
   border-radius: 0 !important;
 }
 
-
 .tab-background-inner {
   background: var(--identity-tab-color) !important;
-  /*background: linear-gradient(0deg, var(--identity-tab-color) 0%, rgba(227,228,230,0) 100%) !important;*/
   opacity: 1.0;
 }
 
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background {
-  /*
-	border-block-start: 2px solid transparent !important;
-  */
   background-color: var(--identity-tab-color) !important;
   opacity: 0.3;
-  background-image: none !important;
   border-radius: 0 !important;
   margin-block: 0 !important;
   box-shadow: none !important;
-  
+}
+
+.tabbrowser-tab[usercontextid][selected="true"] > .tab-stack > .tab-background {
+  box-shadow: none !important;
+  margin-block: 0 !important;
+  border-radius: 0 !important;
+  background-color: var(--identity-tab-color) !important;
+  opacity: 0.7 !important;
+  background-image: none !important;
 }
 
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-line {
@@ -113,60 +101,12 @@
   background-color: var(--identity-tab-color) !important;
 }
 
-/*.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
-  opacity: 1 !important;
-  background-color: var(--identity-tab-color) !important;
-}*/
 
 .tabbrowser-tab > .tab-stack >  .tab-background[selected="true"] > .tab-context-line {
   height: 1px !important;
   background: #4f78fc !important;
   opacity: 0.9 !important;
 }
-
-
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background[selected="true"] {
-  /*
-	border-block-start: 2px solid transparent !important;
-  */
-  box-shadow: none !important;
-  margin-block: 0 !important;
-  border-radius: 0 !important;
-  /*background-color: var(--identity-tab-color) !important;*/
-  opacity: 0.7 !important;
-  background-image: none !important;
-}
-
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background[selected="true"] > .tab-line {
-  /*background-color: var(--identity-tab-color) !important;
-  color: var(--identity-tab-color) !important;
-  opacity: 1;
-  height: 2px !important;*/
-}
-
-/*
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
-  background: var(--identity-tab-color) !important;
-  opacity: 0.2;
-  height: 1px !important;
-}
-
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-line {
-  background-color: var(--identity-tab-color) !important;
-  color: var(--identity-tab-color) !important;
-  opacity: 1;
-  height: 2px !important;
-}/*
-
-
-/** Tab misc. */
-/*.tab-context-line {
-  background: var(--identity-tab-color) !important;
-  background-image: linear-gradient(to right, transparent 10%, var(--identity-tab-color) 10%, var(--identity-tab-color) 90%, transparent 90%);
-  margin: -2px !important;
-  transform: translateY(26px);
-}*/
-
 
 .tab-icon-image {
   opacity: 1 !important;
