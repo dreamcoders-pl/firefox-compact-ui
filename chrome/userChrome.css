@@ -108,6 +108,12 @@
   opacity: 0.9 !important;
 }
 
+#tabbrowser-tabs {
+  &[orient="horizontal"] {
+    min-height: 30px !important;
+  }
+}
+
 .tab-icon-image {
   opacity: 1 !important;
 }
@@ -121,12 +127,6 @@
   inset-inline-end: -9px !important;
   z-index: 1 !important;
 }
-
-.tab-icon-overlay:hover {
-  background-color: white !important;
-  color: black !important;
-}
-
 
 .tab-secondary-label {
   display: none !important;
